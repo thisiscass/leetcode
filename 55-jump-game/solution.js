@@ -10,7 +10,7 @@ var canJump = function (nums) {
     for (let i = 0; i <= furtherst && i < size; i++) {
         let currentFurtherst = nums[i] + i;
         furtherst = Math.max(furtherst, currentFurtherst); 
-
+        
         if(furtherst >= lastIndex) {
             return true;
         }
